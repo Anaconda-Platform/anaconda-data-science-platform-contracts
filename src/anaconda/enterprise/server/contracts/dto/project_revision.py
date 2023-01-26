@@ -1,7 +1,7 @@
 """ Project Revision Definition """
 
 import datetime
-from typing import Union, List
+from typing import List, Union
 
 from .base_model import BaseModel
 from .project_command import ProjectCommand

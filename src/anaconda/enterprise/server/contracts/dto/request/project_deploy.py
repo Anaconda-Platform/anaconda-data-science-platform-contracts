@@ -1,6 +1,6 @@
 """ Project Deployment Request Definition """
 
-from typing import Optional, Union, Dict
+from typing import Dict, Optional, Union
 
 from ...type.project_deploy_target import ProjectDeployTargetType
 from ..base_model import BaseModel
