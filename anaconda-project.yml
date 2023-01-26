@@ -1,0 +1,64 @@
+name: anaconda-enterprise-server-contracts
+description: Anaconda Enterprise Server Contracts
+
+commands:
+  #
+  # Development Time Commands
+  #
+
+  bash:
+    env_spec: default
+    unix: bash
+
+  clean:
+    env_spec: default
+    unix: |
+      rm -rf .coverage htmlcov coverage.xml build
+
+  lint:
+    env_spec: default
+    unix: |
+      pylint src
+      isort --check --diff .
+      black --line-length=120 --target-version=py310 --check --diff .
+
+  lint:fix:
+    env_spec: default
+    unix: |
+      isort .
+      black --line-length=120 --target-version=py310 .
+
+  build:apidocs:
+    env_spec: default
+    unix: |
+      sphinx-apidoc -f -o docs/source/api src/anaconda/enterprise/server/contracts
+
+  build:docs:
+    env_spec: default
+    unix: |
+      cd docs && make clean && make html
+
+channels:
+    - default
+    - https://conda.anaconda.org/conda-forge/
+
+platforms:
+  - linux-64
+  - osx-64
+  - osx-arm64
+  - win-64
+
+env_specs:
+  default:
+    description: Development Environment
+    packages:
+      - python=3.10.8
+      - ipykernel
+      - pydantic
+      - isort
+      - black
+      - black-jupyter
+      - pylint
+      - sphinx
+      - sphinx-rtd-theme
+

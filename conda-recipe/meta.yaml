@@ -1,0 +1,29 @@
+{% set name = "anaconda.enterprise.server.contracts" %}
+{% set version = "0.8.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  path: ../
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+
+requirements:
+  host:
+    - python>=3.8
+    - setuptools
+  run:
+    - python>=3.8
+    - pydantic
+
+about:
+  home: https://github.com/Anaconda-Platform/anaconda-enterprise-server-contracts
+  summary: "Anaconda Enterprise Server Contracts"
+  license: BSD
+  license_file: LICENSE
