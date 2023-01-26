@@ -27,7 +27,7 @@ jobs:
       # https://github.com/conda-incubator/setup-miniconda
       uses: conda-incubator/setup-miniconda@v2
       with:
-        channels: conda-forge,joshburt
+        channels: default,conda-forge
         auto-activate-base: true
         activate-environment: github.action
         environment-file: environment.github.yml
@@ -48,9 +48,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      with:
-        args: >
-          -Dsonar.organization=${{ secrets.SONARCLOUD_ORGANIZATION }}
     - name: Activate GitHub Actions Environment
       run: |
         conda activate github.action
