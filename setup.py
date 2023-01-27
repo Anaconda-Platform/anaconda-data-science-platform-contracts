@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="anaconda.enterprise.server.contracts",
-    version="0.8.0",
+    version="0.8.1",
     package_dir={"": "src"},
     packages=setuptools.find_namespace_packages(where="src"),
     author="Joshua C. Burt",
