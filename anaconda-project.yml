@@ -39,7 +39,7 @@ commands:
       cd docs && make clean && make html
 
 channels:
-    - default
+    - defaults
     - https://conda.anaconda.org/conda-forge/
 
 platforms:
@@ -57,7 +57,6 @@ env_specs:
       - pydantic
       - isort
       - black
-      - black-jupyter
       - pylint
       - sphinx
       - sphinx-rtd-theme
