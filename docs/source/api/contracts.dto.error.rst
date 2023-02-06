@@ -4,7 +4,7 @@ Error Package
 AEConfigError
 ---------------------------------
 
-.. automodule:: dto.error.config
+.. automodule:: contracts.dto.error.config
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +12,7 @@ AEConfigError
 AEError
 --------------------------------
 
-.. automodule:: dto.error.error
+.. automodule:: contracts.dto.error.error
    :members:
    :undoc-members:
    :show-inheritance:
@@ -20,7 +20,7 @@ AEError
 AEFatalError
 --------------------------------
 
-.. automodule:: dto.error.fatal
+.. automodule:: contracts.dto.error.fatal
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,7 +28,7 @@ AEFatalError
 AEUnexpectedResponseError
 -----------------------------------------------
 
-.. automodule:: dto.error.unexpected_response
+.. automodule:: contracts.dto.error.unexpected_response
    :members:
    :undoc-members:
    :show-inheritance:

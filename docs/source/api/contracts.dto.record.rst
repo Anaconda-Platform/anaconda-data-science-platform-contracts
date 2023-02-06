@@ -4,7 +4,23 @@ Record Package
 AbstractAERecord
 ------------------------------------
 
-.. automodule:: dto.record.abstract
+.. automodule:: contracts.dto.record.abstract
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+AbstractAEBase
+------------------------------------------
+
+.. automodule:: contracts.dto.record.abstract_base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+AbstractAERecordSummary
+---------------------------------------------
+
+.. automodule:: contracts.dto.record.abstract_summary
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +28,7 @@ AbstractAERecord
 AERecordProject
 -----------------------------------
 
-.. automodule:: dto.record.project
+.. automodule:: contracts.dto.record.project
    :members:
    :undoc-members:
    :show-inheritance:

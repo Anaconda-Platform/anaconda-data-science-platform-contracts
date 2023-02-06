@@ -1,10 +1,13 @@
 Types
 ======================
 
+Submodules
+----------
+
 AEActionSummaryType
 -------------------------------------
 
-.. automodule:: type.action_summary
+.. automodule:: contracts.type.action_summary
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +15,7 @@ AEActionSummaryType
 AEActionSummaryStatusType
 ---------------------------------------------
 
-.. automodule:: type.action_summary_status
+.. automodule:: contracts.type.action_summary_status
    :members:
    :undoc-members:
    :show-inheritance:
@@ -20,7 +23,7 @@ AEActionSummaryStatusType
 ProjectDeployTargetType
 ---------------------------------------------
 
-.. automodule:: type.project_deploy_target
+.. automodule:: contracts.type.project_deploy_target
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,7 +31,7 @@ ProjectDeployTargetType
 AERecordProjectCreateStatusType
 -----------------------------------------------------
 
-.. automodule:: type.record_project_create_status
+.. automodule:: contracts.type.record_project_create_status
    :members:
    :undoc-members:
    :show-inheritance:
@@ -36,7 +39,7 @@ AERecordProjectCreateStatusType
 AERecordProjectEditorType
 ---------------------------------------------
 
-.. automodule:: type.record_project_editor
+.. automodule:: contracts.type.record_project_editor
    :members:
    :undoc-members:
    :show-inheritance:
@@ -44,7 +47,7 @@ AERecordProjectEditorType
 AERecordProjectResourceProfileType
 --------------------------------------------------------
 
-.. automodule:: type.record_project_resource_profile
+.. automodule:: contracts.type.record_project_resource_profile
    :members:
    :undoc-members:
    :show-inheritance:

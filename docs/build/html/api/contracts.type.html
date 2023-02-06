@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Types &mdash; Anaconda Enterprise Server Contacts 0.8.3 documentation</title>
+  <title>Types &mdash; Anaconda Enterprise Server Contacts 0.9.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -16,7 +15,6 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -41,50 +39,13 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="contracts.dto.html">DTOs</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Types</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-type.action_summary">AEActionSummaryType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#type.action_summary.AEActionSummaryType"><code class="docutils literal notranslate"><span class="pre">AEActionSummaryType</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#type.action_summary.AEActionSummaryType.CREATE_ACTION"><code class="docutils literal notranslate"><span class="pre">AEActionSummaryType.CREATE_ACTION</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#type.action_summary.AEActionSummaryType.DEPLOY_ACTION"><code class="docutils literal notranslate"><span class="pre">AEActionSummaryType.DEPLOY_ACTION</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-type.action_summary_status">AEActionSummaryStatusType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#type.action_summary_status.AEActionSummaryStatusType"><code class="docutils literal notranslate"><span class="pre">AEActionSummaryStatusType</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#type.action_summary_status.AEActionSummaryStatusType.CREATED"><code class="docutils literal notranslate"><span class="pre">AEActionSummaryStatusType.CREATED</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#type.action_summary_status.AEActionSummaryStatusType.INITIAL"><code class="docutils literal notranslate"><span class="pre">AEActionSummaryStatusType.INITIAL</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-type.project_deploy_target">ProjectDeployTargetType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#type.project_deploy_target.ProjectDeployTargetType"><code class="docutils literal notranslate"><span class="pre">ProjectDeployTargetType</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#type.project_deploy_target.ProjectDeployTargetType.DEPLOY"><code class="docutils literal notranslate"><span class="pre">ProjectDeployTargetType.DEPLOY</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-type.record_project_create_status">AERecordProjectCreateStatusType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#type.record_project_create_status.AERecordProjectCreateStatusType"><code class="docutils literal notranslate"><span class="pre">AERecordProjectCreateStatusType</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#type.record_project_create_status.AERecordProjectCreateStatusType.DONE"><code class="docutils literal notranslate"><span class="pre">AERecordProjectCreateStatusType.DONE</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-type.record_project_editor">AERecordProjectEditorType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#type.record_project_editor.AERecordProjectEditorType"><code class="docutils literal notranslate"><span class="pre">AERecordProjectEditorType</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#type.record_project_editor.AERecordProjectEditorType.NOTEBOOK"><code class="docutils literal notranslate"><span class="pre">AERecordProjectEditorType.NOTEBOOK</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#module-type.record_project_resource_profile">AERecordProjectResourceProfileType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#type.record_project_resource_profile.AERecordProjectResourceProfileType"><code class="docutils literal notranslate"><span class="pre">AERecordProjectResourceProfileType</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#type.record_project_resource_profile.AERecordProjectResourceProfileType.DEFAULT"><code class="docutils literal notranslate"><span class="pre">AERecordProjectResourceProfileType.DEFAULT</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.action_summary">AEActionSummaryType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.action_summary_status">AEActionSummaryStatusType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.project_deploy_target">ProjectDeployTargetType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_create_status">AERecordProjectCreateStatusType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_editor">AERecordProjectEditorType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_resource_profile">AERecordProjectResourceProfileType</a></li>
 </ul>
 </li>
 </ul>
@@ -113,121 +74,124 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="types">
+  <div class="section" id="types">
 <h1>Types<a class="headerlink" href="#types" title="Permalink to this heading"></a></h1>
-<section id="module-type.action_summary">
-<span id="aeactionsummarytype"></span><h2>AEActionSummaryType<a class="headerlink" href="#module-type.action_summary" title="Permalink to this heading"></a></h2>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.type.action_summary">
+<span id="aeactionsummarytype"></span><h2>AEActionSummaryType<a class="headerlink" href="#module-contracts.type.action_summary" title="Permalink to this heading"></a></h2>
 <p>Action Summary Type Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="type.action_summary.AEActionSummaryType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">type.action_summary.</span></span><span class="sig-name descname"><span class="pre">AEActionSummaryType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#type.action_summary.AEActionSummaryType" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.action_summary.AEActionSummaryType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.action_summary.</span></span><span class="sig-name descname"><span class="pre">AEActionSummaryType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.action_summary.AEActionSummaryType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Action Summary Type Enumeration</p>
 <p>TODO: Determine if this is complete.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.action_summary.AEActionSummaryType.CREATE_ACTION">
-<span class="sig-name descname"><span class="pre">CREATE_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'create_action'</span></em><a class="headerlink" href="#type.action_summary.AEActionSummaryType.CREATE_ACTION" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.action_summary.AEActionSummaryType.CREATE_ACTION">
+<span class="sig-name descname"><span class="pre">CREATE_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'create_action'</span></em><a class="headerlink" href="#contracts.type.action_summary.AEActionSummaryType.CREATE_ACTION" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.action_summary.AEActionSummaryType.DEPLOY_ACTION">
-<span class="sig-name descname"><span class="pre">DEPLOY_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'deploy_action'</span></em><a class="headerlink" href="#type.action_summary.AEActionSummaryType.DEPLOY_ACTION" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.action_summary.AEActionSummaryType.DEPLOY_ACTION">
+<span class="sig-name descname"><span class="pre">DEPLOY_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'deploy_action'</span></em><a class="headerlink" href="#contracts.type.action_summary.AEActionSummaryType.DEPLOY_ACTION" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="module-type.action_summary_status">
-<span id="aeactionsummarystatustype"></span><h2>AEActionSummaryStatusType<a class="headerlink" href="#module-type.action_summary_status" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.type.action_summary_status">
+<span id="aeactionsummarystatustype"></span><h2>AEActionSummaryStatusType<a class="headerlink" href="#module-contracts.type.action_summary_status" title="Permalink to this heading"></a></h2>
 <p>Action Summary Status Type Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="type.action_summary_status.AEActionSummaryStatusType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">type.action_summary_status.</span></span><span class="sig-name descname"><span class="pre">AEActionSummaryStatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#type.action_summary_status.AEActionSummaryStatusType" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.action_summary_status.AEActionSummaryStatusType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.action_summary_status.</span></span><span class="sig-name descname"><span class="pre">AEActionSummaryStatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.action_summary_status.AEActionSummaryStatusType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Action Summary Status Type Enumeration</p>
 <p>TODO: Determine if this is complete.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.action_summary_status.AEActionSummaryStatusType.CREATED">
-<span class="sig-name descname"><span class="pre">CREATED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'created'</span></em><a class="headerlink" href="#type.action_summary_status.AEActionSummaryStatusType.CREATED" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.action_summary_status.AEActionSummaryStatusType.CREATED">
+<span class="sig-name descname"><span class="pre">CREATED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'created'</span></em><a class="headerlink" href="#contracts.type.action_summary_status.AEActionSummaryStatusType.CREATED" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.action_summary_status.AEActionSummaryStatusType.INITIAL">
-<span class="sig-name descname"><span class="pre">INITIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'initial'</span></em><a class="headerlink" href="#type.action_summary_status.AEActionSummaryStatusType.INITIAL" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.action_summary_status.AEActionSummaryStatusType.INITIAL">
+<span class="sig-name descname"><span class="pre">INITIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'initial'</span></em><a class="headerlink" href="#contracts.type.action_summary_status.AEActionSummaryStatusType.INITIAL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="module-type.project_deploy_target">
-<span id="projectdeploytargettype"></span><h2>ProjectDeployTargetType<a class="headerlink" href="#module-type.project_deploy_target" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.type.project_deploy_target">
+<span id="projectdeploytargettype"></span><h2>ProjectDeployTargetType<a class="headerlink" href="#module-contracts.type.project_deploy_target" title="Permalink to this heading"></a></h2>
 <p>Project Deploy Target Type Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="type.project_deploy_target.ProjectDeployTargetType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">type.project_deploy_target.</span></span><span class="sig-name descname"><span class="pre">ProjectDeployTargetType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#type.project_deploy_target.ProjectDeployTargetType" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.project_deploy_target.ProjectDeployTargetType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.project_deploy_target.</span></span><span class="sig-name descname"><span class="pre">ProjectDeployTargetType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.project_deploy_target.ProjectDeployTargetType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Project Deploy Target Type Enumeration</p>
 <p>TODO: Determine if this is complete.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.project_deploy_target.ProjectDeployTargetType.DEPLOY">
-<span class="sig-name descname"><span class="pre">DEPLOY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'deploy'</span></em><a class="headerlink" href="#type.project_deploy_target.ProjectDeployTargetType.DEPLOY" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.project_deploy_target.ProjectDeployTargetType.DEPLOY">
+<span class="sig-name descname"><span class="pre">DEPLOY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'deploy'</span></em><a class="headerlink" href="#contracts.type.project_deploy_target.ProjectDeployTargetType.DEPLOY" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="module-type.record_project_create_status">
-<span id="aerecordprojectcreatestatustype"></span><h2>AERecordProjectCreateStatusType<a class="headerlink" href="#module-type.record_project_create_status" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.type.record_project_create_status">
+<span id="aerecordprojectcreatestatustype"></span><h2>AERecordProjectCreateStatusType<a class="headerlink" href="#module-contracts.type.record_project_create_status" title="Permalink to this heading"></a></h2>
 <p>Project Record Create Status Type Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="type.record_project_create_status.AERecordProjectCreateStatusType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">type.record_project_create_status.</span></span><span class="sig-name descname"><span class="pre">AERecordProjectCreateStatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#type.record_project_create_status.AERecordProjectCreateStatusType" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.record_project_create_status.AERecordProjectCreateStatusType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.record_project_create_status.</span></span><span class="sig-name descname"><span class="pre">AERecordProjectCreateStatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.record_project_create_status.AERecordProjectCreateStatusType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Project Record Create Status Type Enumeration</p>
 <p>TODO: Determine if this is complete.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.record_project_create_status.AERecordProjectCreateStatusType.DONE">
-<span class="sig-name descname"><span class="pre">DONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'done'</span></em><a class="headerlink" href="#type.record_project_create_status.AERecordProjectCreateStatusType.DONE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.record_project_create_status.AERecordProjectCreateStatusType.DONE">
+<span class="sig-name descname"><span class="pre">DONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'done'</span></em><a class="headerlink" href="#contracts.type.record_project_create_status.AERecordProjectCreateStatusType.DONE" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="module-type.record_project_editor">
-<span id="aerecordprojecteditortype"></span><h2>AERecordProjectEditorType<a class="headerlink" href="#module-type.record_project_editor" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.type.record_project_editor">
+<span id="aerecordprojecteditortype"></span><h2>AERecordProjectEditorType<a class="headerlink" href="#module-contracts.type.record_project_editor" title="Permalink to this heading"></a></h2>
 <p>Project Record Editor Type Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="type.record_project_editor.AERecordProjectEditorType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">type.record_project_editor.</span></span><span class="sig-name descname"><span class="pre">AERecordProjectEditorType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#type.record_project_editor.AERecordProjectEditorType" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.record_project_editor.AERecordProjectEditorType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.record_project_editor.</span></span><span class="sig-name descname"><span class="pre">AERecordProjectEditorType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.record_project_editor.AERecordProjectEditorType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Project Record Editor Type Enumeration</p>
 <p>TODO: Determine if this is complete.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.record_project_editor.AERecordProjectEditorType.NOTEBOOK">
-<span class="sig-name descname"><span class="pre">NOTEBOOK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'notebook'</span></em><a class="headerlink" href="#type.record_project_editor.AERecordProjectEditorType.NOTEBOOK" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.record_project_editor.AERecordProjectEditorType.NOTEBOOK">
+<span class="sig-name descname"><span class="pre">NOTEBOOK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'notebook'</span></em><a class="headerlink" href="#contracts.type.record_project_editor.AERecordProjectEditorType.NOTEBOOK" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="module-type.record_project_resource_profile">
-<span id="aerecordprojectresourceprofiletype"></span><h2>AERecordProjectResourceProfileType<a class="headerlink" href="#module-type.record_project_resource_profile" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.type.record_project_resource_profile">
+<span id="aerecordprojectresourceprofiletype"></span><h2>AERecordProjectResourceProfileType<a class="headerlink" href="#module-contracts.type.record_project_resource_profile" title="Permalink to this heading"></a></h2>
 <p>Project Resource Profile Record Type Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="type.record_project_resource_profile.AERecordProjectResourceProfileType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">type.record_project_resource_profile.</span></span><span class="sig-name descname"><span class="pre">AERecordProjectResourceProfileType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#type.record_project_resource_profile.AERecordProjectResourceProfileType" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.record_project_resource_profile.</span></span><span class="sig-name descname"><span class="pre">AERecordProjectResourceProfileType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Project Resource Profile Record Type Enumeration</p>
 <p>TODO: Determine if this is complete.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="type.record_project_resource_profile.AERecordProjectResourceProfileType.DEFAULT">
-<span class="sig-name descname"><span class="pre">DEFAULT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'default'</span></em><a class="headerlink" href="#type.record_project_resource_profile.AERecordProjectResourceProfileType.DEFAULT" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType.DEFAULT">
+<span class="sig-name descname"><span class="pre">DEFAULT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'default'</span></em><a class="headerlink" href="#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType.DEFAULT" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

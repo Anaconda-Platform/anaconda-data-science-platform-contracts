@@ -1,9 +1,16 @@
 """ Abstract AE Record Definition """
 
-from ..base_model import BaseModel
+import datetime
+from typing import Union
+
+from ...type.record_project_resource_profile import AERecordProjectResourceProfileType
+from .abstract_base import AbstractAEBase
 
 
-class AbstractAERecord(BaseModel):
+class AbstractAERecord(AbstractAEBase):
     """Abstract AE Record DTO"""
 
-    _record_type: str  # TODO: Is this an enumeration?
+    url: str
+    resource_profile: Union[AERecordProjectResourceProfileType, str]
+    created: datetime.datetime
+    git_repos: dict  # TODO: Further details are needed in order to fully define this DTO

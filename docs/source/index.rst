@@ -2,7 +2,7 @@ Anaconda Enterprise Server Contacts
 ===============================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    api/contracts.dto
    api/contracts.type

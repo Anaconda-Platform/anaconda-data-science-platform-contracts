@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Response Package &mdash; Anaconda Enterprise Server Contacts 0.8.3 documentation</title>
+  <title>Response Package &mdash; Anaconda Enterprise Server Contacts 0.9.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -16,7 +15,6 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -46,23 +44,24 @@
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.record.html">Record Package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.request.html">Request Package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Response Package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.response.deployment_token">DeploymentTokenResponse</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#projectdeployresponse">ProjectDeployResponse</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.response.project_revisions_get">ProjectRevisionsGetResponse</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#projectuploadresponse">ProjectUploadResponse</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#projectsgetresponse">ProjectsGetResponse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.deployment_token">DeploymentTokenResponse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.job_create">JobCreateResponse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.project_deploy">ProjectDeployResponse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.project_revisions_get">ProjectRevisionsGetResponse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.project_upload">ProjectUploadResponse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.projects_get">ProjectsGetResponse</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#secretnamesgetresponse">SecretNamesGetResponse</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#aeactionsummary">AEActionSummary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.base_model">BaseModel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_command">ProjectCommand</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_command_error">ProjectCommandError</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_revision">ProjectRevision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.response_wrapper">AEResponseWrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.action_summary">AEActionSummary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.base_model">BaseModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_command">ProjectCommand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_command_error">ProjectCommandError</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_revision">ProjectRevision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.response_wrapper">AEResponseWrapper</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contracts.type.html">Types</a></li>
@@ -93,53 +92,113 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="response-package">
+  <div class="section" id="response-package">
 <h1>Response Package<a class="headerlink" href="#response-package" title="Permalink to this heading"></a></h1>
-<section id="module-dto.response.deployment_token">
-<span id="deploymenttokenresponse"></span><h2>DeploymentTokenResponse<a class="headerlink" href="#module-dto.response.deployment_token" title="Permalink to this heading"></a></h2>
+<div class="section" id="module-contracts.dto.response.deployment_token">
+<span id="deploymenttokenresponse"></span><h2>DeploymentTokenResponse<a class="headerlink" href="#module-contracts.dto.response.deployment_token" title="Permalink to this heading"></a></h2>
 <p>Deployment Token Response Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="dto.response.deployment_token.DeploymentTokenResponse">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.response.deployment_token.</span></span><span class="sig-name descname"><span class="pre">DeploymentTokenResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dto.response.deployment_token.DeploymentTokenResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#dto.base_model.BaseModel" title="dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<dt class="sig sig-object py" id="contracts.dto.response.deployment_token.DeploymentTokenResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.deployment_token.</span></span><span class="sig-name descname"><span class="pre">DeploymentTokenResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.deployment_token.DeploymentTokenResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#contracts.dto.base_model.BaseModel" title="contracts.dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
 <p>Deployment Token Response DTO</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="dto.response.deployment_token.DeploymentTokenResponse.token">
-<span class="sig-name descname"><span class="pre">token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#dto.response.deployment_token.DeploymentTokenResponse.token" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.dto.response.deployment_token.DeploymentTokenResponse.token">
+<span class="sig-name descname"><span class="pre">token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.response.deployment_token.DeploymentTokenResponse.token" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="projectdeployresponse">
-<h2>ProjectDeployResponse<a class="headerlink" href="#projectdeployresponse" title="Permalink to this heading"></a></h2>
-</section>
-<section id="module-dto.response.project_revisions_get">
-<span id="projectrevisionsgetresponse"></span><h2>ProjectRevisionsGetResponse<a class="headerlink" href="#module-dto.response.project_revisions_get" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.dto.response.job_create">
+<span id="jobcreateresponse"></span><h2>JobCreateResponse<a class="headerlink" href="#module-contracts.dto.response.job_create" title="Permalink to this heading"></a></h2>
+<p>Job Create Response Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.response.job_create.JobCreateResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.job_create.</span></span><span class="sig-name descname"><span class="pre">JobCreateResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resourceProfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType"><span class="pre">AERecordProjectResourceProfileType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gitRepos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goalState</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectUrl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">statusText</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOwner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schedule</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.job_create.JobCreateResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.abstract_summary.AbstractAERecordSummary" title="contracts.dto.record.abstract_summary.AbstractAERecordSummary"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractAERecordSummary</span></code></a></p>
+<p>Job Create Response DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.job_create.JobCreateResponse.schedule">
+<span class="sig-name descname"><span class="pre">schedule</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.response.job_create.JobCreateResponse.schedule" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.dto.response.project_deploy">
+<span id="projectdeployresponse"></span><h2>ProjectDeployResponse<a class="headerlink" href="#module-contracts.dto.response.project_deploy" title="Permalink to this heading"></a></h2>
+<p>Project Deploy Response Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.response.project_deploy.ProjectDeployResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.project_deploy.</span></span><span class="sig-name descname"><span class="pre">ProjectDeployResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resourceProfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType"><span class="pre">AERecordProjectResourceProfileType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gitRepos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goalState</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectUrl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">statusText</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOwner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">public</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replicas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.project_deploy.ProjectDeployResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.abstract_summary.AbstractAERecordSummary" title="contracts.dto.record.abstract_summary.AbstractAERecordSummary"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractAERecordSummary</span></code></a></p>
+<p>Project Deploy Response DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.project_deploy.ProjectDeployResponse.public">
+<span class="sig-name descname"><span class="pre">public</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#contracts.dto.response.project_deploy.ProjectDeployResponse.public" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.project_deploy.ProjectDeployResponse.replicas">
+<span class="sig-name descname"><span class="pre">replicas</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#contracts.dto.response.project_deploy.ProjectDeployResponse.replicas" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.dto.response.project_revisions_get">
+<span id="projectrevisionsgetresponse"></span><h2>ProjectRevisionsGetResponse<a class="headerlink" href="#module-contracts.dto.response.project_revisions_get" title="Permalink to this heading"></a></h2>
 <p>Project Revisions Get Response Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="dto.response.project_revisions_get.ProjectRevisionsGetResponse">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.response.project_revisions_get.</span></span><span class="sig-name descname"><span class="pre">ProjectRevisionsGetResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revisions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.html#dto.project_revision.ProjectRevision" title="dto.project_revision.ProjectRevision"><span class="pre">ProjectRevision</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dto.response.project_revisions_get.ProjectRevisionsGetResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#dto.base_model.BaseModel" title="dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<dt class="sig sig-object py" id="contracts.dto.response.project_revisions_get.ProjectRevisionsGetResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.project_revisions_get.</span></span><span class="sig-name descname"><span class="pre">ProjectRevisionsGetResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revisions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.html#contracts.dto.project_revision.ProjectRevision" title="contracts.dto.project_revision.ProjectRevision"><span class="pre">ProjectRevision</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.project_revisions_get.ProjectRevisionsGetResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#contracts.dto.base_model.BaseModel" title="contracts.dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
 <p>Project Revisions Get Response DTO</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="dto.response.project_revisions_get.ProjectRevisionsGetResponse.revisions">
-<span class="sig-name descname"><span class="pre">revisions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.html#dto.project_revision.ProjectRevision" title="dto.project_revision.ProjectRevision"><span class="pre">ProjectRevision</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#dto.response.project_revisions_get.ProjectRevisionsGetResponse.revisions" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.dto.response.project_revisions_get.ProjectRevisionsGetResponse.revisions">
+<span class="sig-name descname"><span class="pre">revisions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.html#contracts.dto.project_revision.ProjectRevision" title="contracts.dto.project_revision.ProjectRevision"><span class="pre">ProjectRevision</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.response.project_revisions_get.ProjectRevisionsGetResponse.revisions" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</section>
-<section id="projectuploadresponse">
-<h2>ProjectUploadResponse<a class="headerlink" href="#projectuploadresponse" title="Permalink to this heading"></a></h2>
-</section>
-<section id="projectsgetresponse">
-<h2>ProjectsGetResponse<a class="headerlink" href="#projectsgetresponse" title="Permalink to this heading"></a></h2>
-</section>
-<section id="secretnamesgetresponse">
+</div>
+<div class="section" id="module-contracts.dto.response.project_upload">
+<span id="projectuploadresponse"></span><h2>ProjectUploadResponse<a class="headerlink" href="#module-contracts.dto.response.project_upload" title="Permalink to this heading"></a></h2>
+<p>Project Upload Response Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.response.project_upload.ProjectUploadResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.project_upload.</span></span><span class="sig-name descname"><span class="pre">ProjectUploadResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.project_upload.ProjectUploadResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.abstract_base.AbstractAEBase" title="contracts.dto.record.abstract_base.AbstractAEBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractAEBase</span></code></a></p>
+<p>Project Upload Response DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.project_upload.ProjectUploadResponse.action">
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></em><a class="headerlink" href="#contracts.dto.response.project_upload.ProjectUploadResponse.action" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.dto.response.projects_get">
+<span id="projectsgetresponse"></span><h2>ProjectsGetResponse<a class="headerlink" href="#module-contracts.dto.response.projects_get" title="Permalink to this heading"></a></h2>
+<p>Projects Get Response Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.response.projects_get.ProjectsGetResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.projects_get.</span></span><span class="sig-name descname"><span class="pre">ProjectsGetResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">records</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.project.AERecordProject" title="contracts.dto.record.project.AERecordProject"><span class="pre">AERecordProject</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.projects_get.ProjectsGetResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#contracts.dto.base_model.BaseModel" title="contracts.dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<p>Projects Get Response DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.projects_get.ProjectsGetResponse.records">
+<span class="sig-name descname"><span class="pre">records</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.project.AERecordProject" title="contracts.dto.record.project.AERecordProject"><span class="pre">AERecordProject</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.response.projects_get.ProjectsGetResponse.records" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="secretnamesgetresponse">
 <h2>SecretNamesGetResponse<a class="headerlink" href="#secretnamesgetresponse" title="Permalink to this heading"></a></h2>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
