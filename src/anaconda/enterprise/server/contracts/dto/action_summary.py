@@ -12,12 +12,14 @@ from .base_model import BaseModel
 class AEActionSummary(BaseModel):
     """Action Summary DTO"""
 
-    message: str
-    updated: datetime.datetime
     id: str
     owner: str
-    status: Union[AEActionSummaryStatusType, str]  # TODO: the enumeration needs further definition.
     created: datetime.datetime
+    updated: datetime.datetime
+
+    status: Union[AEActionSummaryStatusType, str]  # TODO: the enumeration needs further definition.
     type: Union[AEActionSummaryType, str]  # TODO: the enumeration needs further definition.
+    message: str
+
     done: bool
     error: bool
