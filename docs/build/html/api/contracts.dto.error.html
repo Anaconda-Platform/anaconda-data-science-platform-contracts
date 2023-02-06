@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Error Package &mdash; Anaconda Enterprise Server Contacts 0.8.3 documentation</title>
+  <title>Error Package &mdash; Anaconda Enterprise Server Contacts 0.9.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -16,7 +15,6 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -43,10 +41,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="contracts.dto.html">DTOs</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="contracts.dto.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Error Package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.error.config">AEConfigError</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.error.error">AEError</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.error.fatal">AEFatalError</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.error.unexpected_response">AEUnexpectedResponseError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.error.config">AEConfigError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.error.error">AEError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.error.fatal">AEFatalError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.error.unexpected_response">AEUnexpectedResponseError</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.record.html">Record Package</a></li>
@@ -55,12 +53,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#aeactionsummary">AEActionSummary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.base_model">BaseModel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_command">ProjectCommand</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_command_error">ProjectCommandError</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_revision">ProjectRevision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.response_wrapper">AEResponseWrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.action_summary">AEActionSummary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.base_model">BaseModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_command">ProjectCommand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_command_error">ProjectCommandError</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_revision">ProjectRevision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.response_wrapper">AEResponseWrapper</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contracts.type.html">Types</a></li>
@@ -91,53 +89,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="error-package">
+  <div class="section" id="error-package">
 <h1>Error Package<a class="headerlink" href="#error-package" title="Permalink to this heading"></a></h1>
-<section id="module-dto.error.config">
-<span id="aeconfigerror"></span><h2>AEConfigError<a class="headerlink" href="#module-dto.error.config" title="Permalink to this heading"></a></h2>
+<div class="section" id="module-contracts.dto.error.config">
+<span id="aeconfigerror"></span><h2>AEConfigError<a class="headerlink" href="#module-contracts.dto.error.config" title="Permalink to this heading"></a></h2>
 <p>AE Config Error Definition</p>
 <dl class="py exception">
-<dt class="sig sig-object py" id="dto.error.config.AEConfigError">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.error.config.</span></span><span class="sig-name descname"><span class="pre">AEConfigError</span></span><a class="headerlink" href="#dto.error.config.AEConfigError" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.dto.error.config.AEConfigError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.error.config.</span></span><span class="sig-name descname"><span class="pre">AEConfigError</span></span><a class="headerlink" href="#contracts.dto.error.config.AEConfigError" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>AE Config Error</p>
 </dd></dl>
 
-</section>
-<section id="module-dto.error.error">
-<span id="aeerror"></span><h2>AEError<a class="headerlink" href="#module-dto.error.error" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.dto.error.error">
+<span id="aeerror"></span><h2>AEError<a class="headerlink" href="#module-contracts.dto.error.error" title="Permalink to this heading"></a></h2>
 <p>AE Error Definition</p>
 <dl class="py exception">
-<dt class="sig sig-object py" id="dto.error.error.AEError">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.error.error.</span></span><span class="sig-name descname"><span class="pre">AEError</span></span><a class="headerlink" href="#dto.error.error.AEError" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.dto.error.error.AEError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.error.error.</span></span><span class="sig-name descname"><span class="pre">AEError</span></span><a class="headerlink" href="#contracts.dto.error.error.AEError" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>AE Error</p>
 </dd></dl>
 
-</section>
-<section id="module-dto.error.fatal">
-<span id="aefatalerror"></span><h2>AEFatalError<a class="headerlink" href="#module-dto.error.fatal" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.dto.error.fatal">
+<span id="aefatalerror"></span><h2>AEFatalError<a class="headerlink" href="#module-contracts.dto.error.fatal" title="Permalink to this heading"></a></h2>
 <p>AE Fatal Error Definition</p>
 <dl class="py exception">
-<dt class="sig sig-object py" id="dto.error.fatal.AEFatalError">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.error.fatal.</span></span><span class="sig-name descname"><span class="pre">AEFatalError</span></span><a class="headerlink" href="#dto.error.fatal.AEFatalError" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="contracts.dto.error.fatal.AEFatalError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.error.fatal.</span></span><span class="sig-name descname"><span class="pre">AEFatalError</span></span><a class="headerlink" href="#contracts.dto.error.fatal.AEFatalError" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>AE Fatal Error</p>
 </dd></dl>
 
-</section>
-<section id="module-dto.error.unexpected_response">
-<span id="aeunexpectedresponseerror"></span><h2>AEUnexpectedResponseError<a class="headerlink" href="#module-dto.error.unexpected_response" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-contracts.dto.error.unexpected_response">
+<span id="aeunexpectedresponseerror"></span><h2>AEUnexpectedResponseError<a class="headerlink" href="#module-contracts.dto.error.unexpected_response" title="Permalink to this heading"></a></h2>
 <p>AE Unexpected Response Error Definition</p>
 <dl class="py exception">
-<dt class="sig sig-object py" id="dto.error.unexpected_response.AEUnexpectedResponseError">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.error.unexpected_response.</span></span><span class="sig-name descname"><span class="pre">AEUnexpectedResponseError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dto.error.unexpected_response.AEUnexpectedResponseError" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#dto.error.error.AEError" title="dto.error.error.AEError"><code class="xref py py-class docutils literal notranslate"><span class="pre">AEError</span></code></a></p>
+<dt class="sig sig-object py" id="contracts.dto.error.unexpected_response.AEUnexpectedResponseError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.error.unexpected_response.</span></span><span class="sig-name descname"><span class="pre">AEUnexpectedResponseError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.error.unexpected_response.AEUnexpectedResponseError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#contracts.dto.error.error.AEError" title="contracts.dto.error.error.AEError"><code class="xref py py-class docutils literal notranslate"><span class="pre">AEError</span></code></a></p>
 <p>AE Unexpected Response Error</p>
 </dd></dl>
 
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

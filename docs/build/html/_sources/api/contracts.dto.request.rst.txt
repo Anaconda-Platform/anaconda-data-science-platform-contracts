@@ -4,7 +4,15 @@ Request Package
 DeploymentTokenRequest
 ----------------------------------------------
 
-.. automodule:: dto.request.deployment_token
+.. automodule:: contracts.dto.request.deployment_token
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+JobCreateRequest
+----------------------------------------
+
+.. automodule:: contracts.dto.request.job_create
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +20,7 @@ DeploymentTokenRequest
 ProjectCreateRequest
 --------------------------------------------
 
-.. automodule:: dto.request.project_create
+.. automodule:: contracts.dto.request.project_create
    :members:
    :undoc-members:
    :show-inheritance:
@@ -20,7 +28,15 @@ ProjectCreateRequest
 ProjectDeployRequest
 --------------------------------------------
 
-.. automodule:: dto.request.project_deploy
+.. automodule:: contracts.dto.request.project_deploy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ProjectOptions
+---------------------------------------------
+
+.. automodule:: contracts.dto.request.project_options
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,7 +44,7 @@ ProjectDeployRequest
 ProjectUploadRequest
 --------------------------------------------
 
-.. automodule:: dto.request.project_upload
+.. automodule:: contracts.dto.request.project_upload
    :members:
    :undoc-members:
    :show-inheritance:
@@ -36,7 +52,7 @@ ProjectUploadRequest
 ProjectsGetRequest
 ------------------------------------------
 
-.. automodule:: dto.request.projects_get
+.. automodule:: contracts.dto.request.projects_get
    :members:
    :undoc-members:
    :show-inheritance:
@@ -44,7 +60,7 @@ ProjectsGetRequest
 SecretDeleteRequest
 -------------------------------------------
 
-.. automodule:: dto.request.secret_delete
+.. automodule:: contracts.dto.request.secret_delete
    :members:
    :undoc-members:
    :show-inheritance:
@@ -52,7 +68,7 @@ SecretDeleteRequest
 SecretPutRequest
 ----------------------------------------
 
-.. automodule:: dto.request.secret_put
+.. automodule:: contracts.dto.request.secret_put
    :members:
    :undoc-members:
    :show-inheritance:

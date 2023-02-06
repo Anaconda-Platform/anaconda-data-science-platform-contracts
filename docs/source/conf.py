@@ -1,7 +1,10 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../../src/anaconda/enterprise/server/contracts"))
+sys.path.insert(0, os.path.abspath("."))
+sys.path.insert(0, os.path.abspath("../"))
+sys.path.insert(0, os.path.abspath("../../"))
+sys.path.insert(0, os.path.abspath("../../contracts"))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -14,7 +17,7 @@ sys.path.insert(0, os.path.abspath("../../src/anaconda/enterprise/server/contrac
 project = "Anaconda Enterprise Server Contacts"
 copyright = "Anaconda, Inc"
 author = "Joshua C. Burt"
-release = "0.8.3"
+release = "0.9.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

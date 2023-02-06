@@ -50,3 +50,4 @@ coverage.xml
 dist/
 envs/
 anaconda-project-local.yml
+/docs/contracts

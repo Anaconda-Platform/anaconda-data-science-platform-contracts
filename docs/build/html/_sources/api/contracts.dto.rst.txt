@@ -18,7 +18,7 @@ Submodules
 AEActionSummary
 ------------------------------------
 
-.. automodule:: dto.action_summary
+.. automodule:: contracts.dto.action_summary
    :members:
    :undoc-members:
    :show-inheritance:
@@ -26,7 +26,7 @@ AEActionSummary
 BaseModel
 --------------------------------
 
-.. automodule:: dto.base_model
+.. automodule:: contracts.dto.base_model
    :members:
    :undoc-members:
    :show-inheritance:
@@ -34,7 +34,7 @@ BaseModel
 ProjectCommand
 -------------------------------------
 
-.. automodule:: dto.project_command
+.. automodule:: contracts.dto.project_command
    :members:
    :undoc-members:
    :show-inheritance:
@@ -42,7 +42,7 @@ ProjectCommand
 ProjectCommandError
 --------------------------------------------
 
-.. automodule:: dto.project_command_error
+.. automodule:: contracts.dto.project_command_error
    :members:
    :undoc-members:
    :show-inheritance:
@@ -50,7 +50,7 @@ ProjectCommandError
 ProjectRevision
 --------------------------------------
 
-.. automodule:: dto.project_revision
+.. automodule:: contracts.dto.project_revision
    :members:
    :undoc-members:
    :show-inheritance:
@@ -58,7 +58,7 @@ ProjectRevision
 AEResponseWrapper
 --------------------------------------
 
-.. automodule:: dto.response_wrapper
+.. automodule:: contracts.dto.response_wrapper
    :members:
    :undoc-members:
    :show-inheritance:

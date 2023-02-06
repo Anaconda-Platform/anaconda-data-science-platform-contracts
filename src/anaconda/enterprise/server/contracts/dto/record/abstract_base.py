@@ -1,6 +1,6 @@
 """ Abstract AE Base Definition """
 
-from datetime import datetime
+import datetime
 
 from ..base_model import BaseModel
 

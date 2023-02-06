@@ -4,7 +4,15 @@ Response Package
 DeploymentTokenResponse
 -----------------------------------------------
 
-.. automodule:: dto.response.deployment_token
+.. automodule:: contracts.dto.response.deployment_token
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+JobCreateResponse
+-----------------------------------------
+
+.. automodule:: contracts.dto.response.job_create
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +20,7 @@ DeploymentTokenResponse
 ProjectDeployResponse
 ---------------------------------------------
 
-.. automodule:: dto.response.project_deploy
+.. automodule:: contracts.dto.response.project_deploy
    :members:
    :undoc-members:
    :show-inheritance:
@@ -20,7 +28,7 @@ ProjectDeployResponse
 ProjectRevisionsGetResponse
 -----------------------------------------------------
 
-.. automodule:: dto.response.project_revisions_get
+.. automodule:: contracts.dto.response.project_revisions_get
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,7 +36,7 @@ ProjectRevisionsGetResponse
 ProjectUploadResponse
 ---------------------------------------------
 
-.. automodule:: dto.response.project_upload
+.. automodule:: contracts.dto.response.project_upload
    :members:
    :undoc-members:
    :show-inheritance:
@@ -36,7 +44,7 @@ ProjectUploadResponse
 ProjectsGetResponse
 -------------------------------------------
 
-.. automodule:: dto.response.projects_get
+.. automodule:: contracts.dto.response.projects_get
    :members:
    :undoc-members:
    :show-inheritance:
@@ -44,7 +52,7 @@ ProjectsGetResponse
 SecretNamesGetResponse
 ------------------------------------------------
 
-.. automodule:: dto.response.secret_names_get
+.. automodule:: contracts.dto.response.secret_names_get
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Record Package &mdash; Anaconda Enterprise Server Contacts 0.8.3 documentation</title>
+  <title>Record Package &mdash; Anaconda Enterprise Server Contacts 0.9.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -16,7 +15,6 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -44,8 +42,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="contracts.dto.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.error.html">Error Package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Record Package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#module-dto.record.abstract">AbstractAERecord</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#aerecordproject">AERecordProject</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.record.abstract">AbstractAERecord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.record.abstract_base">AbstractAEBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.record.abstract_summary">AbstractAERecordSummary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.record.project">AERecordProject</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.request.html">Request Package</a></li>
@@ -53,12 +53,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#aeactionsummary">AEActionSummary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.base_model">BaseModel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_command">ProjectCommand</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_command_error">ProjectCommandError</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.project_revision">ProjectRevision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-dto.response_wrapper">AEResponseWrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.action_summary">AEActionSummary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.base_model">BaseModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_command">ProjectCommand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_command_error">ProjectCommandError</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.project_revision">ProjectRevision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.html#module-contracts.dto.response_wrapper">AEResponseWrapper</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contracts.type.html">Types</a></li>
@@ -89,23 +89,179 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="record-package">
+  <div class="section" id="record-package">
 <h1>Record Package<a class="headerlink" href="#record-package" title="Permalink to this heading"></a></h1>
-<section id="module-dto.record.abstract">
-<span id="abstractaerecord"></span><h2>AbstractAERecord<a class="headerlink" href="#module-dto.record.abstract" title="Permalink to this heading"></a></h2>
+<div class="section" id="module-contracts.dto.record.abstract">
+<span id="abstractaerecord"></span><h2>AbstractAERecord<a class="headerlink" href="#module-contracts.dto.record.abstract" title="Permalink to this heading"></a></h2>
 <p>Abstract AE Record Definition</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="dto.record.abstract.AbstractAERecord">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dto.record.abstract.</span></span><span class="sig-name descname"><span class="pre">AbstractAERecord</span></span><a class="headerlink" href="#dto.record.abstract.AbstractAERecord" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#dto.base_model.BaseModel" title="dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<dt class="sig sig-object py" id="contracts.dto.record.abstract.AbstractAERecord">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.record.abstract.</span></span><span class="sig-name descname"><span class="pre">AbstractAERecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resourceProfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType"><span class="pre">AERecordProjectResourceProfileType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gitRepos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.record.abstract.AbstractAERecord" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#contracts.dto.record.abstract_base.AbstractAEBase" title="contracts.dto.record.abstract_base.AbstractAEBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractAEBase</span></code></a></p>
 <p>Abstract AE Record DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract.AbstractAERecord.created">
+<span class="sig-name descname"><span class="pre">created</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span></em><a class="headerlink" href="#contracts.dto.record.abstract.AbstractAERecord.created" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract.AbstractAERecord.git_repos">
+<span class="sig-name descname"><span class="pre">git_repos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><a class="headerlink" href="#contracts.dto.record.abstract.AbstractAERecord.git_repos" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract.AbstractAERecord.resource_profile">
+<span class="sig-name descname"><span class="pre">resource_profile</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType"><span class="pre">AERecordProjectResourceProfileType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.record.abstract.AbstractAERecord.resource_profile" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract.AbstractAERecord.url">
+<span class="sig-name descname"><span class="pre">url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract.AbstractAERecord.url" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
-</section>
-<section id="aerecordproject">
-<h2>AERecordProject<a class="headerlink" href="#aerecordproject" title="Permalink to this heading"></a></h2>
-</section>
-</section>
+</div>
+<div class="section" id="module-contracts.dto.record.abstract_base">
+<span id="abstractaebase"></span><h2>AbstractAEBase<a class="headerlink" href="#module-contracts.dto.record.abstract_base" title="Permalink to this heading"></a></h2>
+<p>Abstract AE Base Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_base.AbstractAEBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.record.abstract_base.</span></span><span class="sig-name descname"><span class="pre">AbstractAEBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.record.abstract_base.AbstractAEBase" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#contracts.dto.base_model.BaseModel" title="contracts.dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<p>Abstract AE Base DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_base.AbstractAEBase.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_base.AbstractAEBase.id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_base.AbstractAEBase.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_base.AbstractAEBase.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_base.AbstractAEBase.owner">
+<span class="sig-name descname"><span class="pre">owner</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_base.AbstractAEBase.owner" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_base.AbstractAEBase.updated">
+<span class="sig-name descname"><span class="pre">updated</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span></em><a class="headerlink" href="#contracts.dto.record.abstract_base.AbstractAEBase.updated" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.dto.record.abstract_summary">
+<span id="abstractaerecordsummary"></span><h2>AbstractAERecordSummary<a class="headerlink" href="#module-contracts.dto.record.abstract_summary" title="Permalink to this heading"></a></h2>
+<p>Abstract AE Record Summary Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.record.abstract_summary.</span></span><span class="sig-name descname"><span class="pre">AbstractAERecordSummary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resourceProfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType"><span class="pre">AERecordProjectResourceProfileType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gitRepos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goalState</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectUrl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">statusText</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOwner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#contracts.dto.record.abstract.AbstractAERecord" title="contracts.dto.record.abstract.AbstractAERecord"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractAERecord</span></code></a></p>
+<p>Abstract AE Record Summary DTO
+Extends the Abstract Record.  This summary is further subclassed.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.action">
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.action" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.command">
+<span class="sig-name descname"><span class="pre">command</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.command" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.goal_state">
+<span class="sig-name descname"><span class="pre">goal_state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.goal_state" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.project_name">
+<span class="sig-name descname"><span class="pre">project_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.project_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.project_owner">
+<span class="sig-name descname"><span class="pre">project_owner</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.project_owner" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.project_url">
+<span class="sig-name descname"><span class="pre">project_url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.project_url" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.revision">
+<span class="sig-name descname"><span class="pre">revision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.revision" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.source">
+<span class="sig-name descname"><span class="pre">source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.source" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.state">
+<span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.state" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.status_text">
+<span class="sig-name descname"><span class="pre">status_text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.status_text" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.abstract_summary.AbstractAERecordSummary.variables">
+<span class="sig-name descname"><span class="pre">variables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.record.abstract_summary.AbstractAERecordSummary.variables" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.dto.record.project">
+<span id="aerecordproject"></span><h2>AERecordProject<a class="headerlink" href="#module-contracts.dto.record.project" title="Permalink to this heading"></a></h2>
+<p>AE Project Record Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.record.project.</span></span><span class="sig-name descname"><span class="pre">AERecordProject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">updated</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resourceProfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType" title="contracts.type.record_project_resource_profile.AERecordProjectResourceProfileType"><span class="pre">AERecordProjectResourceProfileType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gitRepos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectCreateStatus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_create_status.AERecordProjectCreateStatusType" title="contracts.type.record_project_create_status.AERecordProjectCreateStatusType"><span class="pre">AERecordProjectCreateStatusType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">editor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_editor.AERecordProjectEditorType" title="contracts.type.record_project_editor.AERecordProjectEditorType"><span class="pre">AERecordProjectEditorType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repository</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repoUrl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repoOwned</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gitServer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.record.project.AERecordProject" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#contracts.dto.record.abstract.AbstractAERecord" title="contracts.dto.record.abstract.AbstractAERecord"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractAERecord</span></code></a></p>
+<p>AE Project Record DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject.editor">
+<span class="sig-name descname"><span class="pre">editor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_editor.AERecordProjectEditorType" title="contracts.type.record_project_editor.AERecordProjectEditorType"><span class="pre">AERecordProjectEditorType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.record.project.AERecordProject.editor" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject.git_server">
+<span class="sig-name descname"><span class="pre">git_server</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.project.AERecordProject.git_server" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject.project_create_status">
+<span class="sig-name descname"><span class="pre">project_create_status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.type.html#contracts.type.record_project_create_status.AERecordProjectCreateStatusType" title="contracts.type.record_project_create_status.AERecordProjectCreateStatusType"><span class="pre">AERecordProjectCreateStatusType</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.record.project.AERecordProject.project_create_status" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject.repo_owned">
+<span class="sig-name descname"><span class="pre">repo_owned</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#contracts.dto.record.project.AERecordProject.repo_owned" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject.repo_url">
+<span class="sig-name descname"><span class="pre">repo_url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.project.AERecordProject.repo_url" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.record.project.AERecordProject.repository">
+<span class="sig-name descname"><span class="pre">repository</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#contracts.dto.record.project.AERecordProject.repository" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
 
 
            </div>

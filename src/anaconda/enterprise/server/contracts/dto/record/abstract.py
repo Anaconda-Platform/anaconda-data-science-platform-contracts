@@ -1,6 +1,6 @@
 """ Abstract AE Record Definition """
 
-from datetime import datetime
+import datetime
 from typing import Union
 
 from ...type.record_project_resource_profile import AERecordProjectResourceProfileType
