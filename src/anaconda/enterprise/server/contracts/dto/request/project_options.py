@@ -13,7 +13,6 @@ class ProjectOptions(BaseModel):
     This defines the project specific options for a request.
     """
 
-    name: str  # deployment name
     source: str  # revision_source_url
     revision: str  # revision_name
     resource_profile: Union[AERecordProjectResourceProfileType, str]
