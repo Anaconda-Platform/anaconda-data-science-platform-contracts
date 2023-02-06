@@ -9,4 +9,5 @@ class ProjectDeployRequest(ProjectOptions):
     """Project Deployment Request DTO"""
 
     public: bool
+    name: str  # deployment name
     static_endpoint: Optional[str] = None  # If defined is used as the static endpoint for serving.
