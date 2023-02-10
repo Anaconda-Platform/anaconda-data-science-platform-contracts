@@ -10,7 +10,7 @@ from .abstract import AbstractAERecord
 class AERecordProject(AbstractAERecord):
     """AE Project Record DTO"""
 
-    _record_type: str  # TODO: Is this an enumeration?
+    _record_type: str  # TODO: Move to enumeration: RecordType
 
     project_create_status: Union[AERecordProjectCreateStatusType, str]
     editor: Union[AERecordProjectEditorType, str]

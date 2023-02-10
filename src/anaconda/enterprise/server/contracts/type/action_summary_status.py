@@ -12,3 +12,4 @@ class AEActionSummaryStatusType(str, Enum):
 
     INITIAL = "initial"
     CREATED = "created"
+    DONE = "done"
