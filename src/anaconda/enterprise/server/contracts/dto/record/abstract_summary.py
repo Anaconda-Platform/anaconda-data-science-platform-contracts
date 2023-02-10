@@ -3,7 +3,7 @@
 from typing import Dict
 
 from ..action_summary import AEActionSummary
-from .abstract import AbstractAERecord
+from .abstract_record import AbstractAERecord
 
 
 class AbstractAERecordSummary(AbstractAERecord):

@@ -1,14 +1,14 @@
-""" AE Project Record Definition """
+""" AE Record Project Definition """
 
 from typing import Union
 
 from ...type.record_project_create_status import AERecordProjectCreateStatusType
 from ...type.record_project_editor import AERecordProjectEditorType
-from .abstract import AbstractAERecord
+from .abstract_record import AbstractAERecord
 
 
-class AERecordProject(AbstractAERecord):
-    """AE Project Record DTO"""
+class AEProjectRecord(AbstractAERecord):
+    """AE Record Project DTO"""
 
     _record_type: str  # TODO: Move to enumeration: RecordType
 

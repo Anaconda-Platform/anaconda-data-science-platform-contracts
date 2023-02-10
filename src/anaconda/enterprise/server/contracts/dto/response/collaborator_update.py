@@ -2,9 +2,9 @@
 
 from typing import List
 
-from ..base_model import BaseModel
-from ..record.collaborator import Collaborator
 from ..action_summary import AEActionSummary
+from ..base_model import BaseModel
+from ..record.collaborator import AECollaboratorRecord
 
 
 class CollaboratorUpdateResponse(BaseModel):
@@ -13,11 +13,11 @@ class CollaboratorUpdateResponse(BaseModel):
 
     Attributes
     ----------
-    collaborators: List[Collaborator]
+    collaborators: List[AECollaboratorRecord]
         The collaborators after update
     action: AEActionSummary
         The action summary for the request
     """
 
-    collaborators: List[Collaborator]
+    collaborators: List[AECollaboratorRecord]
     action: AEActionSummary

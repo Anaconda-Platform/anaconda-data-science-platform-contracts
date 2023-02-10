@@ -1,14 +1,14 @@
-""" Collaborator Update Request """
+""" Collaborator Record Definition """
 
-from ..record.entity import AEEntityRecord
 from ...type.collaboration_permission_type import CollaborationPermissionType
 from ...type.collaborator_type import CollaboratorType
 from ...type.record_type import RecordType
+from ..record.entity import AEEntityRecord
 
 
-class Collaborator(AEEntityRecord):
+class AECollaboratorRecord(AEEntityRecord):
     """
-    Collaborator Update Request DTO
+    Collaborator Record DTO
 
     Attributes
     ----------

@@ -3,10 +3,10 @@
 from typing import List
 
 from ..base_model import BaseModel
-from ..record.project import AERecordProject
+from ..record.project import AEProjectRecord
 
 
 class ProjectsGetResponse(BaseModel):
     """Projects Get Response DTO"""
 
-    records: List[AERecordProject]
+    records: List[AEProjectRecord]
