@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Types &mdash; Anaconda Enterprise Server Contacts 0.9.2 documentation</title>
+  <title>Types &mdash; Anaconda Enterprise Server Contacts 0.10.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,7 +42,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.action_summary">AEActionSummaryType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.action_summary_status">AEActionSummaryStatusType</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.project_deploy_target">ProjectDeployTargetType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.collaboration_permission_type">ProjectDeployTargetType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.collaborator_type">CollaboratorType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">ProjectDeployTargetType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_create_status">AERecordProjectCreateStatusType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_editor">AERecordProjectEditorType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_resource_profile">AERecordProjectResourceProfileType</a></li>
@@ -98,6 +100,11 @@
 <span class="sig-name descname"><span class="pre">DEPLOY_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'deploy_action'</span></em><a class="headerlink" href="#contracts.type.action_summary.AEActionSummaryType.DEPLOY_ACTION" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.action_summary.AEActionSummaryType.SHARE_ACTION">
+<span class="sig-name descname"><span class="pre">SHARE_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'share_action'</span></em><a class="headerlink" href="#contracts.type.action_summary.AEActionSummaryType.SHARE_ACTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </div>
@@ -116,6 +123,11 @@
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.action_summary_status.AEActionSummaryStatusType.DONE">
+<span class="sig-name descname"><span class="pre">DONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'done'</span></em><a class="headerlink" href="#contracts.type.action_summary_status.AEActionSummaryStatusType.DONE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="contracts.type.action_summary_status.AEActionSummaryStatusType.INITIAL">
 <span class="sig-name descname"><span class="pre">INITIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'initial'</span></em><a class="headerlink" href="#contracts.type.action_summary_status.AEActionSummaryStatusType.INITIAL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -123,9 +135,53 @@
 </dd></dl>
 
 </div>
-<div class="section" id="module-contracts.type.project_deploy_target">
-<span id="projectdeploytargettype"></span><h2>ProjectDeployTargetType<a class="headerlink" href="#module-contracts.type.project_deploy_target" title="Permalink to this heading"></a></h2>
-<p>Project Deploy Target Type Definition</p>
+<div class="section" id="module-contracts.type.collaboration_permission_type">
+<span id="projectdeploytargettype"></span><h2>ProjectDeployTargetType<a class="headerlink" href="#module-contracts.type.collaboration_permission_type" title="Permalink to this heading"></a></h2>
+<p>Collaborator Update Request</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.type.collaboration_permission_type.CollaborationPermissionType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.collaboration_permission_type.</span></span><span class="sig-name descname"><span class="pre">CollaborationPermissionType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.collaboration_permission_type.CollaborationPermissionType" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Collaboration Permissions Type
+Permissions are either read-only, or read-write.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.collaboration_permission_type.CollaborationPermissionType.READ_ONLY">
+<span class="sig-name descname"><span class="pre">READ_ONLY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'r'</span></em><a class="headerlink" href="#contracts.type.collaboration_permission_type.CollaborationPermissionType.READ_ONLY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.collaboration_permission_type.CollaborationPermissionType.READ_WRITE">
+<span class="sig-name descname"><span class="pre">READ_WRITE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rw'</span></em><a class="headerlink" href="#contracts.type.collaboration_permission_type.CollaborationPermissionType.READ_WRITE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.type.collaborator_type">
+<span id="collaboratortype"></span><h2>CollaboratorType<a class="headerlink" href="#module-contracts.type.collaborator_type" title="Permalink to this heading"></a></h2>
+<p>Collaborator Type Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.type.collaborator_type.CollaboratorType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.collaborator_type.</span></span><span class="sig-name descname"><span class="pre">CollaboratorType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.collaborator_type.CollaboratorType" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Collaborator Type
+Collaborators can be a user or group within AE.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.collaborator_type.CollaboratorType.GROUP">
+<span class="sig-name descname"><span class="pre">GROUP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'group'</span></em><a class="headerlink" href="#contracts.type.collaborator_type.CollaboratorType.GROUP" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.collaborator_type.CollaboratorType.USER">
+<span class="sig-name descname"><span class="pre">USER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'user'</span></em><a class="headerlink" href="#contracts.type.collaborator_type.CollaboratorType.USER" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="id1">
+<h2>ProjectDeployTargetType<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<span class="target" id="module-contracts.type.project_deploy_target"></span><p>Project Deploy Target Type Definition</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="contracts.type.project_deploy_target.ProjectDeployTargetType">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.project_deploy_target.</span></span><span class="sig-name descname"><span class="pre">ProjectDeployTargetType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.project_deploy_target.ProjectDeployTargetType" title="Permalink to this definition"></a></dt>
@@ -203,7 +259,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright Anaconda, Inc.</p>
+    <p>&#169; Copyright 2023, Anaconda, Inc.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

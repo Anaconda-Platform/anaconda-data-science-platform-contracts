@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DTOs &mdash; Anaconda Enterprise Server Contacts 0.9.2 documentation</title>
+  <title>DTOs &mdash; Anaconda Enterprise Server Contacts 0.10.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -96,10 +96,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contracts.dto.record.html">Record Package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.abstract">AbstractAERecord</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.abstract_base">AbstractAEBase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.abstract_record">AbstractAERecord</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.abstract_summary">AbstractAERecordSummary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.project">AERecordProject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.collaborator">AECollaboratorRecord</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.entity">AEEntityRecord</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.record.html#module-contracts.dto.record.project">AEProjectRecord</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contracts.dto.request.html">Request Package</a><ul>
@@ -115,6 +117,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contracts.dto.response.html">Response Package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contracts.dto.response.html#module-contracts.dto.response.collaborator_update">CollaboratorUpdateResponse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.response.html#module-contracts.dto.response.deployment_token">DeploymentTokenResponse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.response.html#module-contracts.dto.response.job_create">JobCreateResponse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contracts.dto.response.html#module-contracts.dto.response.project_deploy">ProjectDeployResponse</a></li>
@@ -376,7 +379,7 @@ Used for external based consumption.
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright Anaconda, Inc.</p>
+    <p>&#169; Copyright 2023, Anaconda, Inc.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

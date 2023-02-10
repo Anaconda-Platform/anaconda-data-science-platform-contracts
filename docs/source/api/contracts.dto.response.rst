@@ -1,6 +1,14 @@
 Response Package
 ==============================
 
+CollaboratorUpdateResponse
+--------------------------------------------------
+
+.. automodule:: contracts.dto.response.collaborator_update
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 DeploymentTokenResponse
 -----------------------------------------------
 

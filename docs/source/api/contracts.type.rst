@@ -21,6 +21,22 @@ AEActionSummaryStatusType
    :show-inheritance:
 
 ProjectDeployTargetType
+-----------------------------------------------------
+
+.. automodule:: contracts.type.collaboration_permission_type
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CollaboratorType
+----------------------------------------
+
+.. automodule:: contracts.type.collaborator_type
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ProjectDeployTargetType
 ---------------------------------------------
 
 .. automodule:: contracts.type.project_deploy_target

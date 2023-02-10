@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Response Package &mdash; Anaconda Enterprise Server Contacts 0.9.2 documentation</title>
+  <title>Response Package &mdash; Anaconda Enterprise Server Contacts 0.10.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -44,6 +44,7 @@
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.record.html">Record Package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="contracts.dto.request.html">Request Package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Response Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.collaborator_update">CollaboratorUpdateResponse</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.deployment_token">DeploymentTokenResponse</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.job_create">JobCreateResponse</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#module-contracts.dto.response.project_deploy">ProjectDeployResponse</a></li>
@@ -94,6 +95,49 @@
              
   <div class="section" id="response-package">
 <h1>Response Package<a class="headerlink" href="#response-package" title="Permalink to this heading"></a></h1>
+<div class="section" id="module-contracts.dto.response.collaborator_update">
+<span id="collaboratorupdateresponse"></span><h2>CollaboratorUpdateResponse<a class="headerlink" href="#module-contracts.dto.response.collaborator_update" title="Permalink to this heading"></a></h2>
+<p>Collaborator Update Response Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.dto.response.collaborator_update.CollaboratorUpdateResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.collaborator_update.</span></span><span class="sig-name descname"><span class="pre">CollaboratorUpdateResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collaborators</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.collaborator.AECollaboratorRecord" title="contracts.dto.record.collaborator.AECollaboratorRecord"><span class="pre">AECollaboratorRecord</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.collaborator_update.CollaboratorUpdateResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="contracts.dto.html#contracts.dto.base_model.BaseModel" title="contracts.dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<p>Collaborator Update Response DTO</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.collaborator_update.CollaboratorUpdateResponse.collaborators">
+<span class="sig-name descname"><span class="pre">collaborators</span></span><a class="headerlink" href="#contracts.dto.response.collaborator_update.CollaboratorUpdateResponse.collaborators" title="Permalink to this definition"></a></dt>
+<dd><p>The collaborators after update</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.collaborator.AECollaboratorRecord" title="contracts.dto.record.collaborator.AECollaboratorRecord">AECollaboratorRecord</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.dto.response.collaborator_update.CollaboratorUpdateResponse.action">
+<span class="sig-name descname"><span class="pre">action</span></span><a class="headerlink" href="#contracts.dto.response.collaborator_update.CollaboratorUpdateResponse.action" title="Permalink to this definition"></a></dt>
+<dd><p>The action summary for the request</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary">AEActionSummary</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="contracts.dto.html#contracts.dto.action_summary.AEActionSummary" title="contracts.dto.action_summary.AEActionSummary"><span class="pre">AEActionSummary</span></a></em><a class="headerlink" href="#id0" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">collaborators</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.collaborator.AECollaboratorRecord" title="contracts.dto.record.collaborator.AECollaboratorRecord"><span class="pre">AECollaboratorRecord</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
 <div class="section" id="module-contracts.dto.response.deployment_token">
 <span id="deploymenttokenresponse"></span><h2>DeploymentTokenResponse<a class="headerlink" href="#module-contracts.dto.response.deployment_token" title="Permalink to this heading"></a></h2>
 <p>Deployment Token Response Definition</p>
@@ -184,12 +228,12 @@
 <p>Projects Get Response Definition</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="contracts.dto.response.projects_get.ProjectsGetResponse">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.projects_get.</span></span><span class="sig-name descname"><span class="pre">ProjectsGetResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">records</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.project.AERecordProject" title="contracts.dto.record.project.AERecordProject"><span class="pre">AERecordProject</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.projects_get.ProjectsGetResponse" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.dto.response.projects_get.</span></span><span class="sig-name descname"><span class="pre">ProjectsGetResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">records</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.project.AEProjectRecord" title="contracts.dto.record.project.AEProjectRecord"><span class="pre">AEProjectRecord</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.dto.response.projects_get.ProjectsGetResponse" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="contracts.dto.html#contracts.dto.base_model.BaseModel" title="contracts.dto.base_model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
 <p>Projects Get Response DTO</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="contracts.dto.response.projects_get.ProjectsGetResponse.records">
-<span class="sig-name descname"><span class="pre">records</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.project.AERecordProject" title="contracts.dto.record.project.AERecordProject"><span class="pre">AERecordProject</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.response.projects_get.ProjectsGetResponse.records" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">records</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="contracts.dto.record.html#contracts.dto.record.project.AEProjectRecord" title="contracts.dto.record.project.AEProjectRecord"><span class="pre">AEProjectRecord</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#contracts.dto.response.projects_get.ProjectsGetResponse.records" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -211,7 +255,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright Anaconda, Inc.</p>
+    <p>&#169; Copyright 2023, Anaconda, Inc.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
