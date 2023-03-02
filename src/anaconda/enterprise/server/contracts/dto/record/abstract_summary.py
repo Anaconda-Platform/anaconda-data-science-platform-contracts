@@ -1,6 +1,6 @@
 """ Abstract AE Record Summary Definition """
 
-from typing import Dict
+from typing import Dict, Optional
 
 from ..action_summary import AEActionSummary
 from .abstract import AbstractAERecord
@@ -14,7 +14,7 @@ class AbstractAERecordSummary(AbstractAERecord):
 
     source: str
     project_name: str
-    goal_state: str
+    goal_state: Optional[str]
     action: AEActionSummary
     revision: str
     variables: Dict[str, str]
