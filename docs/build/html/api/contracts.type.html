@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Types &mdash; Anaconda Enterprise Server Contacts 0.9.3 documentation</title>
+  <title>Types &mdash; Anaconda Enterprise Server Contacts 0.10.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,6 +42,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.action_summary">AEActionSummaryType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.action_summary_status">AEActionSummaryStatusType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.job_run_state">AEProjectJobRunStateType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.project_deploy_target">ProjectDeployTargetType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_create_status">AERecordProjectCreateStatusType</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-contracts.type.record_project_editor">AERecordProjectEditorType</a></li>
@@ -118,6 +119,37 @@
 <dl class="py attribute">
 <dt class="sig sig-object py" id="contracts.type.action_summary_status.AEActionSummaryStatusType.INITIAL">
 <span class="sig-name descname"><span class="pre">INITIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'initial'</span></em><a class="headerlink" href="#contracts.type.action_summary_status.AEActionSummaryStatusType.INITIAL" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-contracts.type.job_run_state">
+<span id="aeprojectjobrunstatetype"></span><h2>AEProjectJobRunStateType<a class="headerlink" href="#module-contracts.type.job_run_state" title="Permalink to this heading"></a></h2>
+<p>Anaconda Enterprise Project Job Run State Type Definition</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="contracts.type.job_run_state.AEProjectJobRunStateType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contracts.type.job_run_state.</span></span><span class="sig-name descname"><span class="pre">AEProjectJobRunStateType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.type.job_run_state.AEProjectJobRunStateType" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Anaconda Enterprise Project Job Run State Type Enumeration</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.job_run_state.AEProjectJobRunStateType.COMPLETED">
+<span class="sig-name descname"><span class="pre">COMPLETED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'completed'</span></em><a class="headerlink" href="#contracts.type.job_run_state.AEProjectJobRunStateType.COMPLETED" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.job_run_state.AEProjectJobRunStateType.FAILED">
+<span class="sig-name descname"><span class="pre">FAILED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'failed'</span></em><a class="headerlink" href="#contracts.type.job_run_state.AEProjectJobRunStateType.FAILED" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.job_run_state.AEProjectJobRunStateType.RUNNING">
+<span class="sig-name descname"><span class="pre">RUNNING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'running'</span></em><a class="headerlink" href="#contracts.type.job_run_state.AEProjectJobRunStateType.RUNNING" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contracts.type.job_run_state.AEProjectJobRunStateType.STOPPED">
+<span class="sig-name descname"><span class="pre">STOPPED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'stopped'</span></em><a class="headerlink" href="#contracts.type.job_run_state.AEProjectJobRunStateType.STOPPED" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
