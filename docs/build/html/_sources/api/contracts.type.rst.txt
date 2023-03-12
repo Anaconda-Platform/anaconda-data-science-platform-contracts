@@ -20,6 +20,14 @@ AEActionSummaryStatusType
    :undoc-members:
    :show-inheritance:
 
+AEProjectJobRunStateType
+---------------------------------------------
+
+.. automodule:: contracts.type.job_run_state
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 ProjectDeployTargetType
 ---------------------------------------------
 
